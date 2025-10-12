@@ -1,0 +1,320 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body 
+{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container 
+{
+    margin: 0 auto;
+    position: relative;
+}
+
+.header
+{
+    width: 150vh;
+    height: 55vh;
+}
+
+h1
+{
+    margin-top: 20vh;
+    margin-left: 10vh;
+    color: #e9ad3c;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2.5rem;
+    animation: slideInLeft 2s ease-out forwards;
+}
+
+address
+{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.9rem;
+    color: black;
+}
+
+address table
+{
+    margin-left: 5vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+
+.address-icon{
+    width: 6vh;
+    height: 6vh;
+    background-color: white;
+    margin-right: 1vh;
+    padding: 1vh;
+    vertical-align: middle;
+}
+
+.circle
+{
+    border-radius: 50%;
+}
+
+.profile-picture
+{
+    height: 28vh;
+    width: 23vh;
+    margin-top: 10vh;
+    margin-left: 100vh;
+    z-index: 0;
+    animation: slideInRight 2s ease-out forwards;
+    
+}
+
+.shape1,
+.shape2,
+.shape3
+ {
+    position: absolute;
+    height: 100vh;
+    width: 170vh;
+    animation: slideInTop 2s ease-out forwards; 
+}
+
+@keyframes slideInTop
+{
+  from 
+  {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to 
+  {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.shape1
+{
+    background: #333234;
+    clip-path: polygon(90% 0, 90% 30%, 20% 50%, 0 40%, 0 0);
+    z-index: -1;
+}
+
+.shape2
+{
+    background: #333234;
+    clip-path: polygon(0 0, 90% 0, 90% 20%, 90% 45%); 
+    z-index: -2;
+}
+
+.shape3
+{
+    background:#333234;
+    clip-path: polygon(0 0, 90% 0, 90% 30%, 75% 50%, 0 15%);
+    z-index: -3; 
+}
+
+.skills
+{
+    height: 170vh;
+    width: 50vh;
+    background: #333234;
+    animation: slideInLeft 2s ease-out forwards;
+}
+
+@keyframes slideInLeft
+{
+  from 
+  {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to 
+  {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.languages_header
+{
+    padding: 1.5vh 3vh 1.5vh 1.5vh;
+    background: linear-gradient(to right, #ed9e0b, #eea826, #e9ad3c);
+    clip-path: polygon(80% 0, 90% 49%, 100% 49%, 100% 51%, 90% 51%, 80% 100%, 0 100%, 0 50%, 0 0);
+    font-size: 1rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #333234;
+}
+
+.knowledge_header
+{
+    padding: 1.5vh 3vh 1.5vh 1.5vh;
+    background: linear-gradient(to right, #ed9e0b, #eea826, #e9ad3c);
+    clip-path: polygon(80% 0, 90% 49%, 100% 49%, 100% 51%, 90% 51%, 80% 100%, 0 100%, 0 50%, 0 0);
+    font-size: 1rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #333234;
+}
+
+.strengths_header
+{
+    padding: 1.5vh 3vh 1.5vh 1.5vh;
+    background: linear-gradient(to right, #ed9e0b, #eea826, #e9ad3c);
+    clip-path: polygon(80% 0, 90% 49%, 100% 49%, 100% 51%, 90% 51%, 80% 100%, 0 100%, 0 50%, 0 0);
+    font-size: 1rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #333234;
+}
+
+languages ul, knowledge ul, strengths ul
+{
+    list-style-type: circle;
+}
+
+languages li::marker , knowledge li::marker, strengths li::marker
+{
+    color: white;
+}
+
+languages li, knowledge li, strengths li
+{
+    color: white;
+    font-size: 0.9rem;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+.interests_header
+{
+    padding: 1.5vh 3vh 1.5vh 1.5vh;
+    background: linear-gradient(to right, #ed9e0b, #eea826, #e9ad3c);
+    clip-path: polygon(80% 0, 90% 49%, 100% 49%, 100% 51%, 90% 51%, 80% 100%, 0 100%, 0 50%, 0 0);
+    font-size: 1rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #333234;
+}
+
+interests ul
+{
+    list-style-type: none;
+}
+
+interests
+{
+    color: white;
+    font-size: 0.9rem;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+interests .address-icon
+{
+    width: 6vh;
+    height: 6vh;
+    background-color: white;
+    margin-left: -5vh;
+}
+
+interests table
+{
+    margin-left: 10vh;
+    padding-top: 3vh;
+}
+
+.personal_data_education_and_experience
+{
+    height: 170vh;
+    width: 103vh;
+    margin-left: 50vh;
+    margin-top: -170vh;
+    background: #e1e1e1;
+    animation: slideInRight 1s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  from 
+  {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to 
+  {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.personal_data_header
+{
+    padding: 1.5vh 3vh 1.5vh 1.5vh;
+    background: linear-gradient(to right, #748287, #424444, #222526);
+    clip-path: polygon(35% 0, 38% 49%, 100% 49%, 100% 51%, 38% 51%, 35% 100%, 0 100%, 0 50%, 0 0);
+    font-size: 1rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+}
+
+.education_header
+{
+    padding: 1.5vh 3vh 1.5vh 1.5vh;
+    background: linear-gradient(to right, #748287, #424444, #222526);
+    clip-path: polygon(35% 0, 38% 49%, 100% 49%, 100% 51%, 38% 51%, 35% 100%, 0 100%, 0 50%, 0 0);
+    font-size: 1rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+}
+
+education
+{
+
+    font-size: 0.9rem;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+education ul
+{
+    list-style-type: none;
+}
+
+.experience_header
+{
+    padding: 1.5vh 3vh 1.5vh 1.5vh;
+    background: linear-gradient(to right, #748287, #424444, #222526);
+    clip-path: polygon(35% 0, 38% 49%, 100% 49%, 100% 51%, 38% 51%, 35% 100%, 0 100%, 0 50%, 0 0);
+    font-size: 1rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+}
+
+experience
+{
+    font-size: 0.9rem;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+experience ul
+{
+    list-style-type: none;
+}
+
+.work-experience-1 ul
+{
+    list-style-type: disc;
+}
+
+.work-experience-2 ul
+{
+    list-style-type: disc;
+}
+
+
+.cv-clause
+{
+    font-size: 0.7rem;
+    text-align: justify;
+    margin-left: 6vh;
+    margin-right: 6vh;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
