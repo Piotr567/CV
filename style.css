@@ -120,6 +120,7 @@ address table
 {
     height: 170vh;
     width: 50vh;
+    float: left;
     background: #333234;
     animation: slideInLeft 2s ease-out forwards;
 }
@@ -226,8 +227,7 @@ interests table
 {
     height: 170vh;
     width: 103vh;
-    margin-left: 50vh;
-    margin-top: -170vh;
+    float: left ;
     background: #e1e1e1;
     animation: slideInRight 1s ease-out forwards;
 }
